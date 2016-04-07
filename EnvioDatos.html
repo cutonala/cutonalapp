@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!Estilo para TEMA>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+        div {
+            width: 100%;
+            height: 600px;
+            background-image: url('http://choicetracker.com.mx/images/IMG_0175.jpg');
+            background-size: 100% 100%;
+            border: 1px solid red;
+        }
+        </style>
+        
+        
+        
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+        .row:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color :#33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+        </style>
+        
+<! Estilo de Botton y Tablas>
+<style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #f44336;
+        }
+
+        .button1:hover {
+            background-color: #f44336;
+            color: white;
+        }
+        </style>
+        
+        
+<style>
+.button2 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+<style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover{background-color:#f5f5f5}
+        </style>
+
+<!Estilo para MENU>
+<style>
+        body {margin:0;}
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+        </style>
+        
+   
+
+</head>
+<body>
+    <ul>
+      <li><a  href="http://choicetracker.com.mx/index.html">CutonalAap</a></li>
+      <li><a class="active" href="http://choicetracker.com.mx/EnvioDatos.html">Aviso Comunidad</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li style="float:right"><a class="active" href="#about">TheCrew</a></li>
+    </ul> 
+    
+    <div align="center" style="overflow-x:auto;">
+        <form action="http://choicetracker.com.mx/droid/noticiaweb1.php" method="POST" enctype="multipart/form-data" >
+        
+        <table border="2">
+            
+            
+            <tbody>
+                <tr><td> <br> <h1 align="center">Aviso A  Comunidad</h1>></td></tr>
+                
+                <tr>
+                    <td> Titulo <input type="text" name="titulo" required  />   
+                    
+                </tr>
+                
+               
+                
+                <tr >
+                    <td ><br><br > Carrera
+                        <select name="carrera" >
+                        <option>TODAS</option>
+                        <option>Licenciatura en Salud Publica</option>
+                        <option>Licenciatura en Nutricion</option>
+                        <option>Licenciatura en Medico, Cirujano y Partero</option>
+                        <option>Licenciatura en Ingenieria en Nanotecnologia</option>
+                        <option>Licenciatura en Ingenieria en Energia</option>
+                        <option>Licenciatura en Ingenieria en Ciencias Computacionales</option>
+                        <option>Licenciatura en Historia del Arte</option>
+                        <option>Licenciatura en Gerontologia</option>
+                        <option>Licenciatura en Estudios Liberales</option>
+                        <option>Licenciatura en Diseño de Artesania</option>
+                        <option>Licenciatura en Contaduria Publica</option>
+                        <option>Licenciatura en Administracion de Negocios</option>
+                        <option>Abogado</option>
+                        </select>
+                        <br><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td> Link Aviso <input type="text" name="url" />   
+                    
+                </tr>
+                
+                <tr >
+                    <td ><br><br > Seccion
+                        <select name="seccion" >
+                        <option>TODAS</option>
+                        <option>Credencial Recuperada</option>
+                        <option>Envento CUTONALA</option>
+                        <option>Estacionamiento</option>
+                        <option>Recuperado/Perdido</option>
+                        </select>
+                        <br><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td> Detalla el aviso  <textarea  name="articulo" rows="4" cols="50" required ></textarea>
+                </tr>
+                <tr><td><h2 align="center" >Subir Imagen</h2><input type="file" name="fotoUp"></td></tr>
+                
+                <tr>
+                    <td>Fecha Inicial: <input type="date" name="fecha_ini" /> </td>
+                </tr>
+                <tr>
+                    <td>Fecha Final :<input type="date" name="fecha_fin"/> </td>
+                </tr>
+                
+                <tr><td><input type="submit" value="Envio Aviso" class="button button1"/>   
+                        <input type="reset" value="Cancelar" class="button button2"/></td>
+                
+                </tr>
+                
+                
+            
+                
+            </tbody>
+        </table>
+        
+    </div>
+    
+    
+    
+</body>
+</html>
+
